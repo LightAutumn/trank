@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+         <!DOCTYPE hibernate-mapping PUBLIC
+            "-//Hibernate/Hibernate Hibernate-mapping DTD 3.0//EN"
+             "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+         <hibernate-mapping>
+
+       <class name="com.yin.entity.User" table="user_t">
+
+             <id name="id" type="java.lang.Long">
+             <column name="id"></column>
+               <generator class="native"></generator>
+           </id>
+
+           <property name="username" type="java.lang.String">
+                <column name="username" length="255"></column>
+           </property>
+           <property name="password" type="java.lang.String">
+               <column name="password" length="255"></column>
+           </property>
+           <property name="realname" type="java.lang.String">
+               <column name="realname" length="255"></column>
+           </property>
+           <property name="sex" type="java.lang.String">
+               <column name="sex" length="1"></column>
+           </property>
+          <property name="age" type="java.lang.Integer">
+              <column name="age"></column>
+             </property>
+           <property name="telephone" type="java.lang.String">
+               <column name="telephone" length="255"></column>
+           </property>
+           <property name="email" type="java.lang.String">
+               <column name="email" length="255"></column>
+           </property>
+           <property name="address" type="java.lang.String">
+               <column name="address" length="255"></column>
+           </property>
+           <property name="createtime" type="java.util.Date">
+               <column name="createtime"></column>
+           </property>
+           <property name="updatetime" type="java.util.Date">
+               <column name="updatetime" ></column>
+           </property>
+
+         </class>
+
+    </hibernate-mapping>
